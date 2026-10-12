@@ -41,6 +41,6 @@ Reference content was accessible at https://sancrea.com/, https://kamersandalye.
 
 ## Git
 
-This folder is intended to be maintained as a Git repository. Generated output, dependencies and environment files are ignored. No GitHub remote was supplied. Add your own remote when ready; this implementation does not publish or push automatically.
+This project is connected to [GitHub](https://github.com/mehmetakifmemis2-creator/TheGroutCollective). The `main` branch tracks `origin/main`; use `git add`, `git commit` and `git push` to publish future changes.
 
 Phase 1 intentionally contains only the homepage. Product catalog routes, commerce, authentication and a CMS are future decisions.
