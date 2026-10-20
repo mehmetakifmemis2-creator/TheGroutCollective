@@ -5,3 +5,6 @@ out/
 .env*
 !.env.example
 *.log
+
+# Yerel çalışma dosyaları ve geçici kontroller
+work/

@@ -1,0 +1,130 @@
+/* footer: bu dosyada yalnızca bu bölümün stilleri bulunur. */
+
+.site-footer {
+  background: #302f2a;
+  color: #e9e3d8;
+  padding: 75px 6% 25px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 65px;
+  border-bottom: 1px solid #e9e3d830;
+}
+.footer-top h2 {
+  margin-top: 22px;
+}
+.contact-circle {
+  width: 95px;
+  height: 95px;
+  border: 1px solid #e9e3d880;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 43px;
+  transition: background 0.25s;
+}
+.contact-circle:hover {
+  background: #63483a;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.1fr 1fr;
+  gap: 35px;
+  padding: 58px 0;
+}
+.footer-logo {
+  font-family: var(--font-serif);
+  font-size: 56px;
+  letter-spacing: -3px;
+}
+.footer-grid > div:first-child p {
+  font-size: 8px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+.footer-grid h3 {
+  font:
+    9px Arial,
+    sans-serif;
+  letter-spacing: 2px;
+  margin: 12px 0 24px;
+  color: #c5bba9;
+}
+.footer-grid > div:not(:first-child) a,
+.footer-grid > div:not(:first-child) p {
+  display: block;
+  font-size: 11px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+.footer-grid a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.contact-pending {
+  max-width: 180px;
+  color: #c5bba9;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e9e3d830;
+  padding-top: 22px;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+.footer-note {
+  font-size: 9px;
+  color: #c5bba9;
+  margin-top: 24px;
+  line-height: 1.7;
+}
+@media (min-width: 1600px) {
+  .site-footer {
+    padding-left: max(6%, calc((100vw - 1440px) / 2));
+    padding-right: max(6%, calc((100vw - 1440px) / 2));
+  }
+}
+@media (max-width: 1000px) {
+  .footer-grid {
+    grid-template-columns: 1.3fr 1fr 1fr;
+  }
+  .footer-grid > div:last-child {
+    grid-column: 2 / 4;
+  }
+}
+@media (max-width: 700px) {
+  .site-footer {
+    padding: 55px 6% 24px;
+  }
+  .footer-top {
+    gap: 12px;
+    padding-bottom: 40px;
+  }
+  .footer-top h2 {
+    font-size: 33px;
+  }
+  .contact-circle {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    font-size: 26px;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    padding: 35px 0;
+  }
+  .footer-grid > div:first-child {
+    grid-column: 1 / 3;
+    margin-bottom: 10px;
+  }
+  .footer-grid > div:last-child {
+    grid-column: 1 / 3;
+  }
+  .footer-grid h3 {
+    margin-bottom: 19px;
+  }
+}

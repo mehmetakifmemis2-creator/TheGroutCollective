@@ -1,0 +1,106 @@
+/* navigation: bu dosyada yalnızca bu bölümün stilleri bulunur. */
+
+.site-header {
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+  background: #e9e3d8;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid #302f2a18;
+}
+.wordmark {
+  font-family: var(--font-serif);
+  font-size: 37px;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+.navigation {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.navigation a {
+  font-size: 11px;
+  padding: 12px 0;
+  position: relative;
+}
+.navigation a::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.25s;
+}
+.navigation a:hover::after {
+  width: 100%;
+}
+.language {
+  font-size: 10px;
+  border-left: 1px solid #302f2a40;
+  padding-left: 24px;
+}
+.menu-toggle {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .navigation {
+    gap: 17px;
+  }
+  .navigation a {
+    font-size: 10px;
+  }
+  .wordmark {
+    font-size: 30px;
+  }
+  .language {
+    padding-left: 15px;
+  }
+}
+@media (max-width: 700px) {
+  .site-header {
+    height: 72px;
+    padding: 0 6%;
+  }
+  .wordmark {
+    font-size: 33px;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    padding: 12px 0 12px 20px;
+    font-size: 11px;
+    margin-left: auto;
+  }
+  .language {
+    display: none;
+  }
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 20px 6% 30px;
+    background: #e9e3d8;
+    border-bottom: 1px solid #302f2a30;
+  }
+  .navigation.is-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    box-shadow: 0 16px 25px #11121120;
+  }
+  .navigation a {
+    font-size: 15px;
+    padding: 13px 0;
+  }
+}

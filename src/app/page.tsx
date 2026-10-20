@@ -1,16 +1,29 @@
-import { tr } from "@/content/tr";
-import { site } from "@/config/site";
-import { Navigation } from "@/components/navigation";
-import { Photograph } from "@/components/photograph";
-import { Collections } from "@/components/collections";
-const Arrow = () => <span aria-hidden="true">↗</span>;
-export default function Home() {
-  return <><a className="skip-link" href="#main">{tr.ui.skip}</a><Navigation /><main id="main">
-    <section className="hero" id="home" aria-labelledby="hero-title"><Photograph name="hero" alt="Doğal ahşap, sıcak dokular ve geniş pencerelerle aydınlanan temsili bir iç mekân" priority /><div className="hero-shade" /><div className="hero-content"><p className="eyebrow">{tr.hero.eyebrow}</p><h1 id="hero-title">{tr.hero.title}</h1><p className="hero-subtitle">{tr.hero.subtitle}</p><a className="hero-link" href="#dunyamiz">{tr.hero.action}<Arrow /></a></div><div className="hero-bottom"><span>{tr.hero.bottom}</span><a href="#hakkimizda">{tr.hero.scroll} <span aria-hidden="true">↓</span></a></div><span className="hero-placeholder">{tr.ui.imageLabel}</span></section>
-    <section className="intro section-shell" id="hakkimizda"><div><p className="eyebrow">{tr.intro.eyebrow}</p><h2 className="preserve-lines">{tr.intro.title}</h2></div><div className="intro-copy"><p>{tr.intro.body}</p><span className="signature">{tr.intro.foot}</span></div></section>
-    <section className="world section-shell" id="dunyamiz"><div className="section-heading"><p className="eyebrow">{tr.world.eyebrow}</p><h2>{tr.world.title}</h2></div><div className="world-grid">{tr.world.items.map((item, i) => <article className={`world-item world-${item.id}`} key={item.id}><a className="world-image" href={item.href} {...(item.href.startsWith("https") ? { target: "_blank", rel: "noreferrer" } : {})}><Photograph name={item.image} alt={item.alt} /><span className="image-badge">{tr.ui.imageLabel}</span><div className="world-overlay"><span className="world-index">0{i + 1}</span><h3><small>the grout.</small>{item.name}</h3><span className="world-arrow" aria-hidden="true">↗</span></div><span className="sr-only">{item.action}</span></a><p className="eyebrow world-category">{item.category}</p><p className="world-description">{item.text}</p></article>)}</div></section>
-    <section className="collections section-shell" id="koleksiyonlar"><div className="collection-heading"><div><p className="eyebrow">{tr.collections.eyebrow}</p><h2 className="preserve-lines">{tr.collections.title}</h2></div><p>{tr.collections.description}</p></div><Collections /><p className="content-note">{tr.collections.note}</p></section>
-    <section className="showroom" id="showroom"><div className="showroom-photo"><Photograph name="showroom" alt="Bir kafe masasında sunulan kahve ve ahşap dokular" /><div className="showroom-caption"><span>{tr.showroom.caption}</span><span>{tr.showroom.imageNote}</span></div></div><div className="showroom-copy"><span className="showroom-symbol" aria-hidden="true">g.</span><p className="eyebrow">{tr.showroom.eyebrow}</p><h2 className="preserve-lines">{tr.showroom.title}</h2><p>{tr.showroom.body}</p><a className="text-link" href="#iletisim">{tr.showroom.action}<Arrow /></a></div></section>
-    <section className="projects section-shell" id="projeler"><div className="project-heading"><div><p className="eyebrow">{tr.projects.eyebrow}</p><h2>{tr.projects.title}</h2></div><p>{tr.projects.description}</p></div><a className="project-photo" href="#iletisim" aria-label={tr.projects.action}><Photograph name="project" alt="Doğal tonlarda ahşap ve taş detayları bir araya getiren temsili mimari iç mekân" /><span className="image-badge">{tr.ui.imageLabel}</span><span className="project-cta">{tr.projects.action}<Arrow /></span></a><div className="project-meta"><h3>{tr.projects.name}</h3><p className="eyebrow">{tr.projects.type}</p></div><p className="content-note">{tr.projects.note}</p></section>
-  </main><footer id="iletisim"><div className="footer-top"><div><p className="eyebrow">{tr.footer.eyebrow}</p><h2 className="preserve-lines">{tr.footer.title}</h2></div><a href={site.contact.email ? `mailto:${site.contact.email}` : site.instagram[1].url} {...(!site.contact.email ? { target: "_blank", rel: "noreferrer" } : {})} className="contact-circle" aria-label={site.contact.email ? "E-posta ile iletişim kurun" : "Instagram üzerinden The Grout Project ile iletişim kurun"}><Arrow /></a></div><div className="footer-grid"><div><a href="#home" className="footer-logo">the grout.</a><p>COFFEE · PROJECT · CAKE</p></div><div><h3>{tr.footer.nav}</h3>{tr.nav.slice(1).map(item => <a key={item.href} href={item.href}>{item.label}</a>)}</div><div><h3>{tr.footer.socials}</h3>{site.instagram.map(item => <a key={item.url} href={item.url} target="_blank" rel="noreferrer">{item.label} ↗</a>)}</div><div><h3>{tr.footer.contact}</h3><p>{site.contact.address || tr.footer.location}</p>{site.contact.email && <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>}{site.contact.phone && <a href={`tel:${site.contact.phone.replace(/\s/g, "")}`}>{site.contact.phone}</a>}{!site.contact.email && !site.contact.phone && <p className="contact-pending">{tr.footer.pending}</p>}</div></div><div className="footer-bottom"><span>© {new Date().getFullYear()} {tr.footer.copyright}</span><a href="#home">{tr.footer.top} ↑</a></div><p className="footer-note">{tr.footer.note}</p></footer></>;
+// ANA SAYFA: Aşağıdaki bölümler ekranda bu sırayla gösterilir.
+import { Navigation } from "@/components/layout/site-header";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { HomeHero } from "@/components/home/hero";
+import { AboutSection } from "@/components/home/intro";
+import { OurWorldSection } from "@/components/home/world";
+import { CollectionsSection } from "@/components/home/collections-section";
+import { ShowroomSection } from "@/components/home/showroom";
+import { ProjectsPreview } from "@/components/home/projects-preview";
+import { ui } from "@/content/shared";
+export default function HomePage() {
+  return (
+    <>
+      <a className="skip-link" href="#main">
+        {ui.skip}
+      </a>
+      <Navigation />
+      <main id="main">
+        <HomeHero />
+        <AboutSection />
+        <OurWorldSection />
+        <CollectionsSection />
+        <ShowroomSection />
+        <ProjectsPreview />
+      </main>
+      <SiteFooter />
+    </>
+  );
 }

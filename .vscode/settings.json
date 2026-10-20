@@ -1,0 +1,18 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/out": true,
+    "**/work": true,
+    "**/*.tsbuildinfo": true
+  },
+  "search.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/out": true,
+    "**/work": true,
+    "**/*.tsbuildinfo": true
+  }
+}

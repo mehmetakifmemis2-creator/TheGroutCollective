@@ -1,0 +1,3 @@
+Ana sayfa, mimari, koleksiyon ve proje fotoğraflarınızı bu klasöre koyun.
+Aktif fotoğraf yolları: src/content/images.ts
+Menü fotoğrafları: public/images/menu/
