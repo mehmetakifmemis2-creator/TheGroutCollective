@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The Grout kahve, tatlı ve yemek menüsü." />
+    <title>Kafe Menüsü | The Grout</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/menu.css" />
+  </head>
+  <body class="gm">
+    <!-- MENÜ ÜST BİLGİSİ -->
+    <header class="gm-header">
+      <a class="gm-logo" href="index.html">the grout.</a>
+      <span>COFFEE · CAKE · COLLECTIVE</span>
+      <a href="index.html">Ana sayfa ↗</a>
+    </header>
+
+    <main>
+      <!-- MENÜ KARŞILAMA -->
+      <section class="gm-hero">
+        <p class="gm-kicker">THE GROUT / DİJİTAL MENÜ</p>
+        <h1>coffee &amp;<br /><em>choclate</em></h1>
+        <p class="gm-lede">Kahvenize eşlik eden tatlar,<br />sofrada uzayan sohbetler.</p>
+        <a class="gm-explore" href="#urunler">Menüyü keşfet <span>↓</span></a>
+      </section>
+
+      <aside class="gm-preview">
+        ÖNİZLEME
+        <span>Kahve ve içecek seçenekleri taslaktır. Fiyatları henüz belirlenmemiştir.</span>
+      </aside>
+
+      <!-- KATEGORİ BUTONLARI -->
+      <div class="gm-menu" id="urunler">
+        <nav class="gm-tabs" aria-label="Menü kategorileri">
+        <button type="button" data-menu-button="sicak-kahveler" aria-pressed="false"><small>01</small>Sıcak Kahveler</button>
+        <button type="button" data-menu-button="soguk-kahveler" aria-pressed="false"><small>02</small>Soğuk Kahveler</button>
+        <button type="button" data-menu-button="icecekler" aria-pressed="false"><small>03</small>İçecekler</button>
+        <button type="button" data-menu-button="tatlilar" aria-pressed="true"><small>04</small>Tatlılar</button>
+        <button type="button" data-menu-button="yemekler" aria-pressed="false"><small>05</small>Yemekler</button>
+        </nav>
+
+        <!-- ARAMA -->
+        <label class="gm-search">
+          <span>MENÜDE ARA</span>
+          <div>
+            <input type="search" placeholder="Bir tat arayın…" data-menu-search />
+            <span aria-hidden="true">⌕</span>
+          </div>
+        </label>
+
+      <!-- SICAK KAHVELER KATEGORİSİ -->
+      <section class="gm-category" data-menu-section="sicak-kahveler" hidden>
+        <div class="gm-toolbar">
+          <div>
+            <p class="gm-kicker">SEÇ, KEŞFET, KEYFİNİ ÇIKAR</p>
+            <h2>Sıcak Kahveler<sup>01</sup></h2>
+          </div>
+        </div>
+                <div class="gm-grid">
+          <!-- ÜRÜN 01: Espresso -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>01</span></p>
+              <div class="gm-title-price">
+                <h3>Espresso</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 02: Double Espresso -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>02</span></p>
+              <div class="gm-title-price">
+                <h3>Double Espresso</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 03: Americano -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>03</span></p>
+              <div class="gm-title-price">
+                <h3>Americano</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 04: Filtre Kahve -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>04</span></p>
+              <div class="gm-title-price">
+                <h3>Filtre Kahve</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 05: Caffè Latte -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>05</span></p>
+              <div class="gm-title-price">
+                <h3>Caffè Latte</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 06: Cappuccino -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>06</span></p>
+              <div class="gm-title-price">
+                <h3>Cappuccino</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 07: Flat White -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>07</span></p>
+              <div class="gm-title-price">
+                <h3>Flat White</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 08: Mocha -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>08</span></p>
+              <div class="gm-title-price">
+                <h3>Mocha</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 09: Türk Kahvesi -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>09</span></p>
+              <div class="gm-title-price">
+                <h3>Türk Kahvesi</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SOĞUK KAHVELER KATEGORİSİ -->
+      <section class="gm-category" data-menu-section="soguk-kahveler" hidden>
+        <div class="gm-toolbar">
+          <div>
+            <p class="gm-kicker">SEÇ, KEŞFET, KEYFİNİ ÇIKAR</p>
+            <h2>Soğuk Kahveler<sup>02</sup></h2>
+          </div>
+        </div>
+                <div class="gm-grid">
+          <!-- ÜRÜN 01: Iced Americano -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>01</span></p>
+              <div class="gm-title-price">
+                <h3>Iced Americano</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 02: Iced Latte -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>02</span></p>
+              <div class="gm-title-price">
+                <h3>Iced Latte</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 03: Iced Mocha -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>03</span></p>
+              <div class="gm-title-price">
+                <h3>Iced Mocha</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 04: Cold Brew -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>04</span></p>
+              <div class="gm-title-price">
+                <h3>Cold Brew</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Örnek seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- İÇECEKLER KATEGORİSİ -->
+      <section class="gm-category" data-menu-section="icecekler" hidden>
+        <div class="gm-toolbar">
+          <div>
+            <p class="gm-kicker">SEÇ, KEŞFET, KEYFİNİ ÇIKAR</p>
+            <h2>İçecekler<sup>03</sup></h2>
+          </div>
+        </div>
+                <div class="gm-grid">
+          <!-- ÜRÜN 01: İtalyan Soda -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>01</span></p>
+              <div class="gm-title-price">
+                <h3>İtalyan Soda</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Taslak seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 02: Ev Yapımı Limonata -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>02</span></p>
+              <div class="gm-title-price">
+                <h3>Ev Yapımı Limonata</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Taslak seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 03: Ev Yapımı Orman Meyveli Limonata -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>03</span></p>
+              <div class="gm-title-price">
+                <h3>Ev Yapımı Orman Meyveli Limonata</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Taslak seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 04: Taze Sıkım Portakal Suyu -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>04</span></p>
+              <div class="gm-title-price">
+                <h3>Taze Sıkım Portakal Suyu</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Taslak seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 05: Çay -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>05</span></p>
+              <div class="gm-title-price">
+                <h3>Çay</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Taslak seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 06: Su -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>06</span></p>
+              <div class="gm-title-price">
+                <h3>Su</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Taslak seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 07: Maden Suyu -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>TASLAK SEÇENEK</span><span>07</span></p>
+              <div class="gm-title-price">
+                <h3>Maden Suyu</h3>
+                <span class="gm-price">—</span>
+              </div>
+              <p class="gm-description">Taslak seçenek · İçerik ve fiyat henüz kesinleşmedi.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TATLILAR KATEGORİSİ -->
+      <section class="gm-category" data-menu-section="tatlilar">
+        <div class="gm-toolbar">
+          <div>
+            <p class="gm-kicker">SEÇ, KEŞFET, KEYFİNİ ÇIKAR</p>
+            <h2>Tatlılar<sup>04</sup></h2>
+          </div>
+        </div>
+        <p class="gm-subtitle">Tatlılar %100 Belçika çikolatasıyla servis edilir.</p>
+        <div class="gm-grid">
+          <!-- ÜRÜN 01: San Sebastian -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/san-sebastian.jpg" alt="San Sebastian" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>01</span></p>
+              <div class="gm-title-price">
+                <h3>San Sebastian</h3>
+                <span class="gm-price">350₺</span>
+              </div>
+              <p class="gm-description">Üzerinde Belçika çikolatasıyla servis ettiğimiz yumuşak dokulu San Sebastian</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 02: Lotus Cheesecake -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/lotus-cheesecake.jpg" alt="Lotus Cheesecake" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>02</span></p>
+              <div class="gm-title-price">
+                <h3>Lotus Cheesecake</h3>
+                <span class="gm-price">320₺</span>
+              </div>
+              <p class="gm-description">Üzerinde erimiş lotus kremasıyla servis edilir.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 03: Brownie -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/brownie.jpg" alt="Brownie" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>03</span></p>
+              <div class="gm-title-price">
+                <h3>Brownie</h3>
+                <span class="gm-price">330₺</span>
+              </div>
+              <p class="gm-description">Yoğun çikolatalı klasik Brownie üzeri Belçika çikolatası (Sıcak servis edilir.)</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 04: Pate â choux -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/pate-a-choux.jpg" alt="Pate â choux" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>04</span></p>
+              <div class="gm-title-price">
+                <h3>Pate â choux</h3>
+                <span class="gm-price">340₺</span>
+              </div>
+              <p class="gm-description">2 adet içi pastacı krema dolgulu çıtır toplar. Belçika çikolatasıyla servis edilir.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 05: Spoonfull -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/spoonfull.jpg" alt="Spoonfull" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>05</span></p>
+              <div class="gm-title-price">
+                <h3>Spoonfull</h3>
+                <span class="gm-price">340₺</span>
+              </div>
+              <p class="gm-description">Altı ıslak kek, ortası pastacı kreması, üzeri Belçika çikolatası.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 06: Klasik Cup -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/klasik-cup.jpg" alt="Klasik Cup" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>06</span></p>
+              <div class="gm-title-price">
+                <h3>Klasik Cup</h3>
+                <span class="gm-price">350₺</span>
+              </div>
+              <p class="gm-description">Çilek, muz ve Belçika çikolatası</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 07: Tiramisu -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>07</span></p>
+              <div class="gm-title-price">
+                <h3>Tiramisu</h3>
+                <span class="gm-price">330₺</span>
+              </div>
+              <p class="gm-description">Espressoyla ıslatılmış kedi dili bisküvi, özel tiramisu kreması ve kakao</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 08: Napolyon Tatlısı -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>08</span></p>
+              <div class="gm-title-price">
+                <h3>Napolyon Tatlısı</h3>
+                <span class="gm-price">320₺</span>
+              </div>
+              <p class="gm-description">İsteğe göre çilekli ya da muzlu, özel kreması ve çıtır milföy katlarıyla Napolyon tatlısı.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 09: Cream Cup -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/cream-cup.jpg" alt="Cream Cup" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>09</span></p>
+              <div class="gm-title-price">
+                <h3>Cream Cup</h3>
+                <span class="gm-price">350₺</span>
+              </div>
+              <p class="gm-description">Altı ıslak kek, ortası çilek ve pastacı kreması, üzeri Belçika çikolatası.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 10: Profiterol -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/profiterol.jpg" alt="Profiterol" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>10</span></p>
+              <div class="gm-title-price">
+                <h3>Profiterol</h3>
+                <span class="gm-price">320₺</span>
+              </div>
+              <p class="gm-description">3 adet içi krema dolgulu profetirol top ve özel profiterol sosu</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 11: Çikolatalı Cheesecake -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/cikolatali-cheesecake.jpg" alt="Çikolatalı Cheesecake" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>11</span></p>
+              <div class="gm-title-price">
+                <h3>Çikolatalı Cheesecake</h3>
+                <span class="gm-price">340₺</span>
+              </div>
+              <p class="gm-description">Sade cheesecake üzerine Belçika çikolatasıyla servis edilir.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 12: Frambuazlı Cheesecake -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/frambuazli-cheesecake.jpg" alt="Frambuazlı Cheesecake" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>12</span></p>
+              <div class="gm-title-price">
+                <h3>Frambuazlı Cheesecake</h3>
+                <span class="gm-price">320₺</span>
+              </div>
+              <p class="gm-description">İsteğe göre çilekli ya da muzlu magnolia</p>
+                <p class="gm-note">Kaynak menüdeki açıklama bu şekilde; ürün açıklaması teyit bekliyor.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 13: Klasik Churros -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/klasik-churros.jpg" alt="Klasik Churros" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>13</span></p>
+              <div class="gm-title-price">
+                <h3>Klasik Churros</h3>
+                <span class="gm-price">200₺</span>
+              </div>
+              <p class="gm-description">Porsiyonda 2 adet bulunmaktadır. Klasik churros şeklinde yanında çikolatayla servis edilir.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 14: Meyveli Churros -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/meyveli-churros.jpg" alt="Meyveli Churros" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>14</span></p>
+              <div class="gm-title-price">
+                <h3>Meyveli Churros</h3>
+                <span class="gm-price">210₺</span>
+              </div>
+              <p class="gm-description">Ortasında çilek ve muz bulunan 2 adet churros çubuğu. Üzerinde çikolatayla servis edilir.</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 15: Dolgulu Churros -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/dolgulu-churros.jpg" alt="Dolgulu Churros" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Tatlılar</span><span>15</span></p>
+              <div class="gm-title-price">
+                <h3>Dolgulu Churros</h3>
+                <span class="gm-price">220₺</span>
+              </div>
+              <p class="gm-description">İçinde krema dolgusu, çilek ve muz bulunan 2 adet churros çubuğu. Üzerinde çikolatayla servis edilir.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- YEMEKLER KATEGORİSİ -->
+      <section class="gm-category" data-menu-section="yemekler" hidden>
+        <div class="gm-toolbar">
+          <div>
+            <p class="gm-kicker">SEÇ, KEŞFET, KEYFİNİ ÇIKAR</p>
+            <h2>Yemekler<sup>05</sup></h2>
+          </div>
+        </div>
+                <div class="gm-grid">
+          <!-- ÜRÜN 01: Köfte Ekmek -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/kofte-ekmek.jpg" alt="Köfte Ekmek" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Yemekler</span><span>01</span></p>
+              <div class="gm-title-price">
+                <h3>Köfte Ekmek</h3>
+                <span class="gm-price">350₺</span>
+              </div>
+              <p class="gm-description">Yarım ekmek içerisinde 120 gram köfte ve özel sosumuzla harmanladığımız marul, domates ve soğan salatası</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 02: Pesto Tost -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/pesto-tost.jpg" alt="Pesto Tost" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Yemekler</span><span>02</span></p>
+              <div class="gm-title-price">
+                <h3>Pesto Tost</h3>
+                <span class="gm-price">230₺</span>
+              </div>
+              <p class="gm-description">Pesto sos, kaşar, beyaz peynir ve domates</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 03: Klasik Karışık -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/klasik-karisik.jpg" alt="Klasik Karışık" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Yemekler</span><span>03</span></p>
+              <div class="gm-title-price">
+                <h3>Klasik Karışık</h3>
+                <span class="gm-price">250₺</span>
+              </div>
+              <p class="gm-description">Sucuk, çift kaşar, salatalık turşusu, ketçap, mayonez, tereyağ ve özel baharat</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 04: the grout tost -->
+          <article class="gm-item" data-menu-item>
+              <div class="gm-image">
+                <img class="gm-photo" src="assets/images/menu/the-grout-tost.jpg" alt="the grout tost" loading="lazy" />
+              </div>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Yemekler</span><span>04</span></p>
+              <div class="gm-title-price">
+                <h3>the grout tost</h3>
+                <span class="gm-price">300₺</span>
+              </div>
+              <p class="gm-description">Sucuk, kırmızı kuru et, çift kaşar, cheddar, salatalık turşusu, ketçap, mayonez, tereyağ ve özel baharat</p>
+            </div>
+          </article>
+
+          <!-- ÜRÜN 05: Çıtır Tabağı -->
+          <article class="gm-item gm-text-item" data-menu-item>
+            <div class="gm-item-body">
+              <p class="gm-item-label"><span>Yemekler</span><span>05</span></p>
+              <div class="gm-title-price">
+                <h3>Çıtır Tabağı</h3>
+                <span class="gm-price">250₺</span>
+              </div>
+              <p class="gm-description">Patates kızartması, 4 adet soğan halkası, 2 adet nugget ve 2 adet peynir çubuğu</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <!-- MENÜ ALT BİLGİSİ -->
+    <footer class="gm-footer">
+      <a href="index.html">Ana sayfa ↗</a>
+      <p>Güzel şeyler, bir arada.</p>
+      <small>THE GROUT COLLECTIVE · MENÜ ÖNİZLEMESİ</small>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
