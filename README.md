@@ -7,7 +7,9 @@ Bu proje doğrudan düzenlenebilen sade HTML, CSS ve JavaScript dosyalarından o
 - `index.html` — ana sayfa
 - `about.html` — hakkımızda
 - `projects.html` — projeler
-- `menu.html` — kafe menüsü
+- `coffee.html` — Coffee dünyası ve kafe menüsü bağlantısı
+- `cake.html` — Cake dünyası
+- `menu.html` — Coffee sayfasının içinden açılan kafe menüsü
 
 ## Tasarım ve işlev dosyaları
 

@@ -71,6 +71,93 @@
   font-size: 10px;
 }
 
+.brand-feature {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  min-height: 620px;
+  margin: 80px 0 110px;
+  background: var(--brown);
+  color: var(--paper-light);
+}
+
+.brand-feature-image {
+  min-height: 620px;
+}
+
+.brand-feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 12%;
+}
+
+.brand-feature-copy h2 {
+  margin-top: 24px;
+  font-family: var(--serif);
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.brand-feature-copy > p:not(.eyebrow) {
+  margin-top: 26px;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.brand-gallery {
+  padding-bottom: 120px;
+}
+
+.brand-gallery-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 25px 0 38px;
+  border-top: 1px solid var(--line);
+}
+
+.brand-gallery-heading h2 {
+  max-width: 620px;
+  font-family: var(--serif);
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.brand-card-image {
+  height: 390px;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.brand-card-image.product-photo img {
+  object-fit: contain;
+}
+
+.brand-card h3 {
+  margin-top: 18px;
+  font-family: var(--serif);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.brand-card p {
+  margin-top: 9px;
+  color: #5f5a52;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
 @media (max-width: 760px) {
   .story-grid,
   .project-meta {
@@ -87,5 +174,35 @@
   .project-image {
     min-height: 0;
     height: 420px;
+  }
+
+  .brand-feature {
+    grid-template-columns: 1fr;
+    margin: 55px 0 75px;
+  }
+
+  .brand-feature-image {
+    min-height: 440px;
+  }
+
+  .brand-feature-copy {
+    padding: 50px 8%;
+  }
+
+  .brand-gallery-heading {
+    display: block;
+  }
+
+  .brand-gallery-heading h2 {
+    margin-top: 18px;
+  }
+
+  .brand-grid {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .brand-card-image {
+    height: 430px;
   }
 }

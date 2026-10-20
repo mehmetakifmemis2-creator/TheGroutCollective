@@ -9,7 +9,9 @@ Artık Next.js veya karmaşık üretilmiş `out/index.html` yok. Ana sayfanın g
 - Ana sayfa: `index.html`
 - Hakkımızda: `about.html`
 - Projeler: `projects.html`
-- Kafe menüsü: `menu.html`
+- Coffee: `coffee.html`
+- Cake: `cake.html`
+- Kafe menüsü: `menu.html` — ziyaretçi bu sayfaya Coffee içinden ulaşır
 
 Her bölümün başında `<!-- ANA KARŞILAMA -->`, `<!-- HİKÂYEMİZ -->` veya `<!-- PROJELER -->` gibi açıklamalar bulunur.
 
