@@ -28,7 +28,7 @@ Dosyaların içinde `<!-- ... -->` açıklamaları bulunur. Metni doğrudan HTML
 
 Marka fotoğrafları `assets/images/site/` klasöründedir. Aynı dosya adını koruyarak yeni bir JPG ile değiştirdiğinde ilgili sayfadaki fotoğraf da değişir.
 
-- `cafe-patio.jpg` — ana sayfanın büyük giriş fotoğrafı
+- `cafe-patio.jpg`, `cafe-interior.jpg`, `coffee-table.jpg`, `cafe-entrance-night.jpg` — ana sayfadaki sıralı ve yumuşak geçişli giriş slaytı
 - `cafe-front.jpg` — ana sayfadaki Coffee kartı ve Coffee sayfasının büyük fotoğrafı
 - `cafe-interior.jpg` — Hakkımızda sayfasının büyük fotoğrafı
 - `coffee-table.jpg`, `cafe-lounge.jpg`, `cafe-entrance-night.jpg` — Coffee sayfasındaki üçlü galeri
