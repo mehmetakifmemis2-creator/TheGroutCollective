@@ -25,7 +25,7 @@
 }
 
 .feature-image {
-  min-height: 250px;
+  min-height: 100px;
   margin-top: 80px;
   position: relative;
 }
