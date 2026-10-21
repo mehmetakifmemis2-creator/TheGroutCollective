@@ -17,7 +17,8 @@ Bu proje doğrudan düzenlenebilen sade HTML, CSS ve JavaScript dosyalarından o
 - `assets/css/home.css` — ana sayfa
 - `assets/css/pages.css` — hakkımızda ve projeler
 - `assets/css/menu.css` — kafe menüsü
-- `assets/js/site.js` — mobil üst menü
+- `assets/js/site.js` — mobil üst menü ve site/menü geçiş animasyonu
+- `assets/js/transition-init.js` — yeni sayfa açılırken geçiş ekranını hazırlar
 - `assets/js/menu.js` — kategori ve ürün araması
 - `assets/images/menu/` — ürün fotoğrafları
 - `assets/images/site/` — kafe, Coffee ve Cake sayfalarında kullanılan marka fotoğrafları
