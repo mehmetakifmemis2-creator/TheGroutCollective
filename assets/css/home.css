@@ -134,3 +134,22 @@
     height: 470px;
   }
 }
+/* 1. fotoğraf */
+.home-slideshow img:nth-child(1) {
+  object-position: 50% 60%;
+}
+
+/* 2. fotoğraf */
+.home-slideshow img:nth-child(2) {
+  object-position: 50% 80%;
+}
+
+/* 3. fotoğraf */
+.home-slideshow img:nth-child(3) {
+  object-position: 50% 75%;
+}
+
+/* 4. fotoğraf */
+.home-slideshow img:nth-child(4) {
+  object-position: 80% 45%;
+}
