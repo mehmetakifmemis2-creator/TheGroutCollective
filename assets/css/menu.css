@@ -405,7 +405,16 @@
 .gm-drinks h3 { font-size: 21px; letter-spacing: 0; }
 .gm-drinks .gm-price { font-size: 19px; }
 @media (min-width: 851px) {
-  .gm-food { max-width: 1100px; margin-inline: auto; }
+  .gm-food { max-width: 1200px; margin-inline: auto; }
+  .gm-spread {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px 24px;
+  }
+  .gm-food .gm-image { max-height: 250px; }
+  .gm-food .gm-title-price { flex-wrap: wrap; gap: 6px 10px; }
+  .gm-food h3 { font-size: 22px; overflow-wrap: break-word; }
+  .gm-food .gm-price { font-size: 19px; }
+  .gm-food .gm-description { font-size: 14px; }
 }
 /* Keep every photo and its description together in a single product card. */
 .gm-food .gm-item {
