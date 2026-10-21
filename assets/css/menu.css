@@ -384,7 +384,7 @@
 }
 
 /* Continuous menu: food spreads and compact drink lists. */
-.gm-category[hidden], .gm-item[hidden] { display: none; }
+.gm .gm-category[hidden], .gm .gm-item[hidden] { display: none; }
 .gm-category + .gm-category { margin-top: 48px; border-top: 1px solid var(--line); }
 .gm-food .gm-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 40px; }
 .gm-food .gm-item { display: flex; flex-direction: column; justify-content: flex-start; min-height: 0; border: 0; padding: 0; gap: 16px; }
