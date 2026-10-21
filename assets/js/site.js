@@ -13,6 +13,8 @@ const transitionClasses = [
   "page-transition-active",
   "page-transition-cover",
   "page-transition-reveal",
+  "page-transition-from-menu",
+  "page-transition-from-site",
   "page-transition-to-menu",
   "page-transition-to-site",
 ];
@@ -22,7 +24,7 @@ function clearPageTransition() {
 }
 
 if (transitionRoot.classList.contains("page-transition-reveal")) {
-  const revealDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 180 : 900;
+  const revealDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 180 : 1250;
   window.setTimeout(clearPageTransition, revealDuration);
 }
 
@@ -52,22 +54,24 @@ document.addEventListener("click", (event) => {
   }
 
   event.preventDefault();
-  const theme = destinationIsMenu ? "menu" : "site";
+  const currentTheme = currentIsMenu ? "menu" : "site";
+  const destinationTheme = destinationIsMenu ? "menu" : "site";
 
   try {
-    sessionStorage.setItem("grout-page-transition", theme);
+    sessionStorage.setItem("grout-page-transition", destinationTheme);
   } catch {
-    // Depolama kullanılamıyorsa çıkış animasyonu yine çalışır.
+    // The outgoing animation still works when storage is unavailable.
   }
 
   clearPageTransition();
   transitionRoot.classList.add(
     "page-transition-active",
-    `page-transition-to-${theme}`,
+    `page-transition-from-${currentTheme}`,
+    `page-transition-to-${destinationTheme}`,
     "page-transition-cover",
   );
 
-  const coverDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 160 : 950;
+  const coverDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 180 : 2200;
   window.setTimeout(() => window.location.assign(destination.href), coverDuration);
 });
 

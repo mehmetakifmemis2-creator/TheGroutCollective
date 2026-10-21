@@ -248,7 +248,7 @@ p {
 }
 
 
-/* SITE / MENÜ SAYFA GEÇİŞİ */
+/* SITE / MENU PAGE TRANSITION */
 html.page-transition-active {
   overflow: hidden;
 }
@@ -263,7 +263,7 @@ html.page-transition-active::after {
 }
 
 html.page-transition-active::before {
-  background: var(--paper);
+  background: var(--transition-end-background);
 }
 
 html.page-transition-active::after {
@@ -271,7 +271,7 @@ html.page-transition-active::after {
   z-index: 9999;
   display: grid;
   place-items: center;
-  color: var(--ink);
+  color: var(--transition-end-color);
   font-family: var(--serif);
   font-size: clamp(64px, 12vw, 180px);
   line-height: 1;
@@ -279,50 +279,83 @@ html.page-transition-active::after {
   text-align: center;
 }
 
-html.page-transition-to-menu::before {
-  background: #080808;
+html.page-transition-from-site,
+html.page-transition-to-site {
+  --transition-site-background: #ebe5da;
+  --transition-site-color: #1d1d1a;
 }
 
-html.page-transition-to-menu::after {
-  color: #f5f3ef;
+html.page-transition-from-menu,
+html.page-transition-to-menu {
+  --transition-menu-background: #080808;
+  --transition-menu-color: #f5f3ef;
 }
 
-html.page-transition-to-site::before {
-  background: var(--paper);
+html.page-transition-from-site {
+  --transition-start-background: var(--transition-site-background);
+  --transition-start-color: var(--transition-site-color);
 }
 
-html.page-transition-to-site::after {
-  color: var(--ink);
+html.page-transition-from-menu {
+  --transition-start-background: var(--transition-menu-background);
+  --transition-start-color: var(--transition-menu-color);
+}
+
+html.page-transition-to-site {
+  --transition-end-background: var(--transition-site-background);
+  --transition-end-color: var(--transition-site-color);
+}
+
+html.page-transition-to-menu {
+  --transition-end-background: var(--transition-menu-background);
+  --transition-end-color: var(--transition-menu-color);
 }
 
 html.page-transition-cover::before {
-  animation: page-cover-background 900ms cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation: page-cover-background 2100ms cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 html.page-transition-cover::after {
-  animation: page-cover-logo 900ms cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation: page-cover-logo 2100ms cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 html.page-transition-reveal::before {
-  animation: page-reveal-background 850ms cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation: page-reveal-background 1200ms cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 html.page-transition-reveal::after {
-  animation: page-reveal-logo 750ms cubic-bezier(0.65, 0, 0.35, 1) both;
+  animation: page-reveal-logo 1050ms cubic-bezier(0.65, 0, 0.35, 1) both;
 }
 
 @keyframes page-cover-background {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  0% {
+    opacity: 0;
+    background: var(--transition-start-background);
+  }
+  16%, 42% {
+    opacity: 1;
+    background: var(--transition-start-background);
+  }
+  78%, 100% {
+    opacity: 1;
+    background: var(--transition-end-background);
+  }
 }
 
 @keyframes page-cover-logo {
-  0%, 28% {
+  0%, 10% {
     opacity: 0;
+    color: var(--transition-start-color);
     transform: translateY(18px) scale(0.98);
   }
-  100% {
+  22%, 42% {
     opacity: 1;
+    color: var(--transition-start-color);
+    transform: translateY(0) scale(1);
+  }
+  78%, 100% {
+    opacity: 1;
+    color: var(--transition-end-color);
     transform: translateY(0) scale(1);
   }
 }
@@ -333,11 +366,11 @@ html.page-transition-reveal::after {
 }
 
 @keyframes page-reveal-logo {
-  from {
+  0%, 22% {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-  to {
+  100% {
     opacity: 0;
     transform: translateY(-14px) scale(1.02);
   }
