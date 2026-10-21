@@ -104,6 +104,9 @@ p {
   border: 0;
   background: transparent;
   padding: 12px 0 12px 18px;
+  color: var(--ink);
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .eyebrow {
